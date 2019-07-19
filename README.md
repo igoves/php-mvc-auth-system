@@ -7,13 +7,6 @@
 OOP PHP MVC Authorization system without framework. Included 2 languages, main(profile) page, page authorization and page registration with same fields and upload photo.
 Docker running Nginx, PHP-FPM, Composer, MySQL and PHPMyAdmin.
 
-This project use the following ports :
-| Server     | Port |
-|------------|------|
-| MySQL      | 8989 |
-| PHPMyAdmin | 8080 |
-| Nginx      | 8000 |
-
 ___
 
 ## Installing and start 
@@ -100,19 +93,16 @@ docker-compose exec -T php ./vendor/bin/phpcs -v --standard=PSR2 ./app
 sudo docker-compose exec -T php ./vendor/bin/phpcs ./app text cleancode,codesize,controversial,design,naming,unusedcode
 ```
 
+___
 
 ## Screenshots
 
-Main Screen
 ![Main Screen](https://raw.githubusercontent.com/utz0r2/php-mvc-auth-system/master/screenshots/main_screen.png)
 
-Login
-![Login](https://raw.githubusercontent.com/utz0r2/php-mvc-auth-system/master/screenshots/login.png
+![Login](https://raw.githubusercontent.com/utz0r2/php-mvc-auth-system/master/screenshots/login.png)
 
-Profile
 ![Profile](https://raw.githubusercontent.com/utz0r2/php-mvc-auth-system/master/screenshots/profile.png)
 
-Registration
 ![Profile](https://raw.githubusercontent.com/utz0r2/php-mvc-auth-system/master/screenshots/registration.png)
 
 ___
@@ -125,7 +115,7 @@ ___
 ## Contacts
 - SKYPE: [utz0r2](skype:utz0r2)
 - EMAIL: [dev@xfor.top](mailto:dev@xfor.top)
-- WWW: https://dev.xfor.top/cv.html
+- WWW: https://dev.xfor.top/
 - LinkedIn: https://www.linkedin.com/in/igor-veselov/
 - github: https://github.com/utz0r2
 
