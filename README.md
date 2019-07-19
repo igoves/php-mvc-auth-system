@@ -1,11 +1,11 @@
 # PHP MVC Authorization system
 
-![Main Screen](https://raw.githubusercontent.com/utz0r2/php-mvc-auth-system/master/screenshots/main_screen.png)
-
 ## Overview
 
 OOP PHP MVC Authorization system without framework. Included 2 languages, main(profile) page, page authorization and page registration with same fields and upload photo.
 Docker running Nginx, PHP-FPM, Composer, MySQL and PHPMyAdmin.
+
+![Main Screen](https://raw.githubusercontent.com/utz0r2/php-mvc-auth-system/master/screenshots/main_screen.png)
 
 ___
 
@@ -14,13 +14,13 @@ ___
 To install [Git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git), download it and install following the instructions :
 
 ```sh
-git clone https://github.com/nanoninja/docker-nginx-php-mysql.git
+git clone https://github.com/utz0r2/php-mvc-auth-system.git
 ```
 
 Go to the project directory :
 
 ```sh
-cd docker-nginx-php-mysql
+cd php-mvc-auth-system
 ```
 
 Start the application :
