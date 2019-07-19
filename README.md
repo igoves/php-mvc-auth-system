@@ -1,14 +1,11 @@
 # PHP MVC Authorization system
 
-Docker running Nginx, PHP-FPM, Composer, MySQL and PHPMyAdmin
-
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
+![Main Screen](https://raw.githubusercontent.com/utz0r2/php-mvc-auth-system/master/screenshots/main_screen.png)
 
 ## Overview
 
-OOP PHP MVC Authorization system without framework. Include 2 languages, main(profile) page, page authorization and page registration with same fields and upload photo.
-
+OOP PHP MVC Authorization system without framework. Included 2 languages, main(profile) page, page authorization and page registration with same fields and upload photo.
+Docker running Nginx, PHP-FPM, Composer, MySQL and PHPMyAdmin.
 
 This project use the following ports :
 | Server     | Port |
@@ -17,6 +14,7 @@ This project use the following ports :
 | PHPMyAdmin | 8080 |
 | Nginx      | 8000 |
 
+___
 
 ## Installing and start 
 
@@ -74,13 +72,6 @@ Start the application :
 ```sh
 sudo make docker-start
 ```
-
-Show help :
-
-```sh
-make help
-```
-
 ___
 
 ## Use Docker commands
@@ -112,17 +103,22 @@ sudo docker-compose exec -T php ./vendor/bin/phpcs ./app text cleancode,codesize
 
 ## Screenshots
 
-Start Page
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
+Main Screen
+![Main Screen](https://raw.githubusercontent.com/utz0r2/php-mvc-auth-system/master/screenshots/main_screen.png)
 
+Login
+![Login](https://raw.githubusercontent.com/utz0r2/php-mvc-auth-system/master/screenshots/login.png
 
+Profile
+![Profile](https://raw.githubusercontent.com/utz0r2/php-mvc-auth-system/master/screenshots/profile.png)
 
+Registration
+![Profile](https://raw.githubusercontent.com/utz0r2/php-mvc-auth-system/master/screenshots/registration.png)
 
 ___
 
 ## About me
-Hello, my name is Igor Veselov. I am Senior Full Stack Web Developer. Main specialization - Ecommerce websites. On this time developed CMS [vvShop](https://vvshop.xfor.top/) and other e-commerce projects turnkey. Opened for interesting offers.
+Hello, my name is Igor Veselov. I am Senior Full Stack Web Developer. Main specialization - Ecommerce websites. Opened for interesting offers.
 
 ___
 
