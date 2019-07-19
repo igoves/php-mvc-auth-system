@@ -16,7 +16,7 @@ before_install:
 
 before_script:
   - sudo make docker-start
-  - sleep 2m
+  - sleep 2m 
 
 script:
   - sudo make test
