@@ -1,4 +1,5 @@
-# PHP MVC Authorization system
+# PHP MVC Authorization system [![Build Status](https://travis-ci.org/utz0r2/design-patterns-php.svg?branch=master)](https://travis-ci.org/utz0r2/design-patterns-php)
+
 
 ## Overview
 
