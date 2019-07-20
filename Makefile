@@ -24,22 +24,16 @@ help:
 init:
 	@$(shell cp -n $(shell pwd)/web/app/composer.json.dist $(shell pwd)/web/app/composer.json 2> /dev/null)
 
-apidoc:
-	@docker-compose exec -T php php -d memory_limit=256M -d xdebug.profiler_enable=0 ./app/vendor/bin/apigen generate app/src --destination app/doc
-	@make resetOwner
-
 clean:
 	@rm -Rf data/db/mysql/*
 	@rm -Rf $(MYSQL_DUMPS_DIR)/*
-	@rm -Rf web/app/vendor
-	@rm -Rf web/app/composer.lock
-	@rm -Rf web/app/doc
-	@rm -Rf web/app/report
-	@rm -Rf etc/ssl/*
+	@rm -Rf web/vendor
+	@rm -Rf web/composer.lock
+	@rm -Rf web/report
 
 code-sniff:
 	@echo "Checking the standard code..."
-	@docker-compose exec -T php ./app/vendor/bin/phpcs -v --standard=PSR2 app/src
+	@docker-compose exec -T php ./vendor/bin/phpcs -v --standard=PSR2 app
 
 composer-up:
 	@docker run --rm -v $(shell pwd)/web/app:/app composer update
@@ -50,9 +44,6 @@ docker-start: init
 docker-stop:
 	@docker-compose down -v
 	@make clean
-
-gen-certs:
-	@docker run --rm -v $(shell pwd)/etc/ssl:/certificates -e "SERVER=$(NGINX_HOST)" jacoelho/generate-certificate
 
 logs:
 	@docker-compose logs -f
@@ -67,12 +58,12 @@ mysql-restore:
 
 phpmd:
 	@docker-compose exec -T php \
-	./app/vendor/bin/phpmd \
-	./app/src \
+	./vendor/bin/phpmd \
+	./app \
 	text cleancode,codesize,controversial,design,naming,unusedcode
 
 test: code-sniff
-	@docker-compose exec -T php ./app/vendor/bin/phpunit --colors=always --configuration ./app/
+	@docker-compose exec -T php ./vendor/bin/phpunit --colors=always --configuration ./app/
 	@make resetOwner
 
 resetOwner:
